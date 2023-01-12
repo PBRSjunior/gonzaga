@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@RequestMapping
+@RequestMapping("/")
 public class GonzagaApplication {
+	
 	@GetMapping
+	public String getHomeTeste() {
+		return "Teste Home API";
+	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(GonzagaApplication.class, args);
 	}
