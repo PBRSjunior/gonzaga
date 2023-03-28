@@ -13,11 +13,10 @@ public class GonzagaApplication {
 	
 	@GetMapping
 	public String getHomeTeste() {
-		return "Teste Home API";
+		return "Teste Gonzaga API";
 	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(GonzagaApplication.class, args);
 	}
-
 }
